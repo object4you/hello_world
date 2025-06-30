@@ -10,7 +10,7 @@ class Planet
   @total_days
 
   def initialize(r, w, h, o, v)
-    @radius = r # Raggio pianeta
+    @radius = r # RAGGIO PIANETA
     @weight = w # Peso del pianeta
     @habitable = h # Il pianeta è abitabile?
     @area = (4/3)*@radius**3*3.14 # Area del pianeta
