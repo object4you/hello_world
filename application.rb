@@ -1,5 +1,5 @@
-class Planet
 
+class Planet
   @radius
   @weight
   @habitable
@@ -10,12 +10,12 @@ class Planet
   @total_days
 
   def initialize(r, w, h, o, v)
-    @radius = r #raggio pianeta
-    @weight = w #Peso del pianeta
-    @habitable = h #Il pianeta è abitabile?
-    @area = (4/3)*@radius**3*3.14 #Area del pianeta
-    @orbit_radius = o #Raggio dell'orbita
-    @rotation_speed = v #Velocità di rotazione nell'orbita
+    @radius = r # raggio pianeta
+    @weight = w # Peso del pianeta
+    @habitable = h # Il pianeta è abitabile?
+    @area = (4/3)*@radius**3*3.14 # Area del pianeta
+    @orbit_radius = o # Raggio dell'orbita
+    @rotation_speed = v # Velocità di rotazione nell'orbita
   end
 
   def area
@@ -39,7 +39,6 @@ class Planet
     print @total_days
     print "\n"
   end
-
 end
 
 
