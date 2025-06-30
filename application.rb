@@ -25,9 +25,9 @@ class Planet
 
   def is_habitable
     if @habitable
-      print "Benvenuto\n" 
+      print "Benvenuta\n" 
     else
-      print "Sei morto\n"
+      print "Sei morta\n"
     end
   end
 
