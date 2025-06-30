@@ -42,7 +42,7 @@ class Planet
 end
 
 
-giove = Planet.new(71492, 80000000, true, 778000000, 47000)
+giove = Planet.new(71492, 932876947351, true, 778000000, 47000)
 venere = Planet.new(500, 2, false, 860, 2)
 
 giove.area
