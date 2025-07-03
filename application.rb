@@ -51,14 +51,3 @@ giove.is_habitable
 venere.is_habitable
 giove.duration
 venere.duration
-
-# TODO aggiungere parametro raggio orbita e velocità di rotazione, crea funzione che mi stampa la durata di un anno
-# pseudocodice
-# 
-#calcolo circonferenza 
-#converto km/h in km/24h
-#divido la circonferenza per i km fatti in un giorno e ottengo il numero di giorni
-#
-#
-#DOMANDE:
-#
