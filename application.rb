@@ -9,13 +9,13 @@ class Planet
   @rotation_speed_trasp
   @total_days
 
-  def initialize(r, w, h, o, v)
-    @radius = r # RAGGIO PIANETA
-    @weight = w # Peso del pianeta
-    @habitable = h # Il pianeta è abitabile?
+  def initialize(radius:, weight:, habitable:, orbit_radius:, rotation_speed:)
+    @radius = radius # RAGGIO PIANETA
+    @weight = weight # Peso del pianeta
+    @habitable = habitable # Il pianeta è abitabile?
     @area = (4/3)*@radius**3*3.14 # Area del pianeta
-    @orbit_radius = o # Raggio dell'orbita
-    @rotation_speed = v # Velocità di rotazione nell'orbita
+    @orbit_radius = orbit_radius # Raggio dell'orbita
+    @rotation_speed = rotation_speed # Velocità di rotazione nell'orbita
   end
 
   def area
@@ -42,8 +42,8 @@ class Planet
 end
 
 
-giove = Planet.new(71492, 932876947351, true, 778000000, 47000)
-venere = Planet.new(500, 2, false, 860, 2)
+giove = Planet.new(radius: 71492, weight: 932876947351, habitable: true, orbit_radius: 778000000, rotation_speed: 47000)
+venere = Planet.new(radius: 500, weight: 2, habitable: false, orbit_radius: 860, rotation_speed: 2)
 
 giove.area
 venere.area
