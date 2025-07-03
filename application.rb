@@ -1,30 +1,30 @@
 
 class Planet
-  @radius
-  @weight
-  @habitable
-  @area
-  @orbit_radius
-  @rotation_speed
-  @rotation_speed_trasp
-  @total_days
+  attr_accessor :radius
+  attr_accessor :weight
+  attr_accessor :habitable
+  attr_accessor :area
+  attr_accessor :orbit_radius
+  attr_accessor :rotation_speed
+  attr_accessor :rotation_speed_trasp
+  attr_accessor :total_days
 
   def initialize(radius:, weight:, habitable:, orbit_radius:, rotation_speed:)
-    @radius = radius # RAGGIO PIANETA
-    @weight = weight # Peso del pianeta
-    @habitable = habitable # Il pianeta è abitabile?
-    @area = (4/3)*@radius**3*3.14 # Area del pianeta
-    @orbit_radius = orbit_radius # Raggio dell'orbita
-    @rotation_speed = rotation_speed # Velocità di rotazione nell'orbita
+    self.radius = radius # RAGGIO PIANETA
+    self.weight = weight # Peso del pianeta
+    self.habitable = habitable # Il pianeta è abitabile?
+    self.area = (4/3)*self.radius**3*3.14 # Area del pianeta
+    self.orbit_radius = orbit_radius # Raggio dell'orbita
+    self.rotation_speed = rotation_speed # Velocità di rotazione nell'orbita
   end
 
   def area
-    print @area
+    print self.area
     print "\n"
   end
 
   def is_habitable
-    if @habitable
+    if self.habitable
       print "Benvenuta\n" 
     else
       print "Sei morta\n"
@@ -32,20 +32,12 @@ class Planet
   end
 
   def duration
-    circunference = (2*3.14)*@orbit_radius
-    @rotation_speed_trasp = @rotation_speed*24
-    @total_days = circunference/@rotation_speed_trasp
+    circunference = (2*3.14)*self.orbit_radius
+    self.rotation_speed_trasp = self.rotation_speed*24
+    self.total_days = circunference/self.rotation_speed_trasp
 
-    print @total_days
+    print self.total_days
     print "\n"
-  end
-
-  def radius
-    return @radius
-  end
-
-  def radius=(r)
-    @radius = r
   end
 end
 
