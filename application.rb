@@ -39,6 +39,14 @@ class Planet
     print @total_days
     print "\n"
   end
+
+  def radius
+    return @radius
+  end
+
+  def radius=(r)
+    @radius = r
+  end
 end
 
 
