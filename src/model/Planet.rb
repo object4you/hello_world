@@ -1,6 +1,6 @@
 class Planet
   attr_accessor :radius
-  attr_accessor :area
+  attr_writer :area
   attr_accessor :weight
   attr_accessor :habitable
   attr_accessor :orbit_radius
@@ -34,7 +34,7 @@ class Planet
   end
 
   def area
-    defArea = (2*3.14)*@radius
+    (2*3.14)*self.radius
   end
 end
 
