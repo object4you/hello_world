@@ -1,8 +1,8 @@
 class Planet
   attr_accessor :radius
+  attr_writer :area
   attr_accessor :weight
   attr_accessor :habitable
-  attr_accessor :area
   attr_accessor :orbit_radius
   attr_accessor :rotation_speed
   attr_accessor :rotation_speed_trasp
@@ -12,7 +12,6 @@ class Planet
     self.radius = radius # RAGGIO PIANETA
     self.weight = weight # Peso del pianeta
     self.habitable = habitable # Il pianeta è abitabile?
-    self.area = (4/3)*self.radius**3*3.14 # Area del pianeta
     self.orbit_radius = orbit_radius # Raggio dell'orbita
     self.rotation_speed = rotation_speed # Velocità di rotazione nell'orbita
   end
@@ -33,4 +32,14 @@ class Planet
     print self.total_days
     print "\n"
   end
+
+  def area
+    (2*3.14)*self.radius
+  end
 end
+
+#attr_accessor ci crea i metodi di scrittura e lettura di un attributo
+#dovrò sovrascrivere il metodo di scrittura in modo che abbia le mie logiche
+#per creare solo il metodo di lettura = attr_reader
+#per creare solo il metodo di scrittura = attr_writer
+#nell attributo area far creare da ruby solo il metodo della lettura mentre quello della scrittura va fatto da noi
