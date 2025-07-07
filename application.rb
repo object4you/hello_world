@@ -1,4 +1,5 @@
 require_relative "src/model/Planet.rb"
+require_relative "src/model/Star.rb"
 
 # L'indentazione e i caratteri di a capo sono fondamentali per avere codice leggibile.
 # Quando gli argomenti di un metodo diventano tanti è necessario riorganizzare il codice come segue:
